@@ -1,0 +1,193 @@
+<!--Own Code-->
+<!DOCTYPE html>
+<!--Defining language of page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Title of Page-->
+    <title>Phones</title>
+    <!--Linking CSS Stylesheet to HTML-->
+    <link rel="stylesheet" type="text/css" href="../CSS/Phones.css">
+    <!--Linking Bootstrap framework to HTML-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Adds a more responsive design for smaller screens-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--Own Code End-->
+<!--W3Schools - How to create a top navigation bar with CSS, https://www.w3schools.com/howto/howto_js_topnav.asp & 
+    Own Code (Hamburger Menu for smaller screens, Logo in navbar)-->
+<body>
+    <!--Top Navigation bar placed in header-->
+    <header>
+        <div class="topnav">
+            <!--Logo class with the logo image placed inside, displayed in Navbar-->
+            <div class="logo">
+                <img src="../Images/NavLogo.png" alt="Logo">
+            </div>
+            <!--Navigation bar buttons which link to different pages. Phones.html is the page displayed therefore has a class called active-->
+            <a href="Home.html">Home</a>
+            <a class="active" href="Phones.html">Phones</a>
+            <a class="help" href="Help.html">Help</a>
+            <!--Account class with a linked button which allows the user to log out-->
+            <div class="account">
+                <a href="../index.html">Log Out</a>
+            </div>
+            <!--Hamburger menu allowing for compatability with smaller screens-->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
+    </header>
+<!--W3Schools - How to create a top navigation bar with CSS & Own Code; End-->
+
+<!--Bootstrap - Grid System, https://getbootstrap.com/docs/4.0/layout/grid/ & Own Code 
+    (Photos in each border, defining rows, Hyperlinks to websites, Search Bar)-->
+    <!--Container Class-->
+    <div class="container">
+        <!--Bootstrap row function, keeps search bar in the center-->
+        <div class="row justify-content-center">
+            <!--Boostrap function, keeps the search bar as one column allowing full container to be used as search bar-->
+          <div class="col-md-12">
+            <!--search-container Class-->
+            <div class="search-container">
+                <!--Bootstrap search-bar function, creates a search bar by using the class to style it visually as a search bar, 
+                    additionally placeholder has been used to show it's a search bar to a customer-->
+              <input type="text" id="search-input" class="form-control search-input" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Container Class-->
+    <div class="container">
+        <!--First row of Phones Class-->
+        <div class="row r1">
+            <!--iPhone 16 Class-->
+            <div class="I16">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 1/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/I16.png" alt="I16">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine?afid=p238%7CsWBGjaMHP-dc_mtid_187079nc38483_pcrid_714542375950_pgrid_170878479547_pntwk_g_pchan_local_pexid__ptid_pla-2361610257290_&cid=aos-uk-kwgo-pla-iphone--slid---product-MYEC3QN/A-UK">
+                            <h4>iPhone 16</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--iPhone 16 Plus Class-->
+            <div class="I16plus">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 2/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/I16plus.png" alt="I16+">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-16/6.7-inch-display-128gb-teal?afid=p238%7CsWBGjaMHP-dc_mtid_187079nc38483_pcrid_714542375950_pgrid_170878479547_pntwk_g_pchan_local_pexid__ptid_pla-2361610257290_&cid=aos-uk-kwgo-pla-iphone--slid---product-MYEC3QN%2FA-UK">
+                            <h4>iPhone 16 Plus</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--iPhone 16 Pro Class-->
+            <div class="I16pro">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 3/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/I16pro.png" alt="I16P">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-16-pro/6.3-inch-display-128gb-desert-titanium?afid=p238%7Cs83uVKYdJ-dc_mtid_187079nc38483_pcrid_714542375956_pgrid_170878479747_pntwk_g_pchan_local_pexid__ptid_pla-2361501380145_&cid=aos-uk-kwgo-pla-iphone--slid---product-MYNF3QN%2FA-UK">
+                            <h4>iPhone 16 Pro</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--iPhone 16 Pro Max Class-->
+            <div class="I16promax">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 4/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/I16promax.png" alt="I16PM">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-16-pro/6.3-inch-display-128gb-desert-titanium?afid=p238%7Cs83uVKYdJ-dc_mtid_187079nc38483_pcrid_714542375956_pgrid_170878479747_pntwk_g_pchan_local_pexid__ptid_pla-2361501380145_&cid=aos-uk-kwgo-pla-iphone--slid---product-MYNF3QN%2FA-UK">
+                            <h4>iPhone 16 Pro Max</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Second row of Phones Class-->
+        <div class="row r2">
+            <!--Samsung S25 Class-->
+            <div class="S25">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 1/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/S25.png" alt="S25">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.samsung.com/uk/business/smartphones/galaxy-s/galaxy-s25-navy-256gb-sm-s931bdbgeub/buy/?cid=UK_PPC_4586843643_ID~GLB0006AEL_CN~Paradigm-Series-PLA_BS~mx_PR~f1h25_SB~smart_PH~on_MK~gb_OB~conv_FS~hobl_FF~-&ad=730129434225&gad_source=1&gclid=EAIaIQobChMIo5b27uCqiwMVJ5dQBh3NvwQ8EAQYAiABEgIeJvD_BwE&gclsrc=aw.ds">
+                            <h4>Samsung Galaxy S25</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Samsung S25 Plus Class-->
+            <div class="S25+">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 2/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/S25+.png" alt="S25+">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.samsung.com/uk/business/smartphones/galaxy-s/galaxy-s25-plus-blueblack-512gb-online-exclusive-sm-s936bzkgeub/buy/">
+                            <h4>Samsung Galaxy S25+</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Samsung S25 Ultra Class-->
+            <div class="S25U">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 3/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/S25U.png" alt="S25U">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.samsung.com/uk/business/smartphones/galaxy-s/galaxy-s25-ultra-titanium-black-1tb-sm-s938bzkheub/buy/">
+                            <h4>Samsung Galaxy S25 Ultra</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--HONOR Magic7 Pro Class-->
+            <div class="HM7P">
+                <!--Bootstrap Function, Splits the whole column into 4 parts + Centers text & Picture 4/4-->
+                <div class="col-sm-3 text-center">
+                    <!--Importing Phone Picture-->
+                    <img src="../Images/PhonePics/HonorM7P.png" alt="Honor">
+                    <!--Text Class (Phone title & Hyperlink to Website to buy phone)-->
+                    <div class="text">
+                        <a href="https://www.honor.com/uk/phones/honor-magic7-pro/buy/?utm_source=google&utm_medium=cpc&utm_campaign=m7p_lau_uk_ec_conv_pur_int_search_p_ms&gad_source=1&gclid=EAIaIQobChMIkoqExOGqiwMVjZRQBh3VMglEEAAYASAAEgI92vD_BwE">
+                            <h4>HONOR Magic7 Pro</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap - Grid System & Own Code; End-->
+
+    <!--Own Code-->
+    <!--Copyright Class-->
+    <div class="copyright">
+        <br><br>
+        <p>© TNKs Super Smartphones 2024-2025 </p>
+    </div>    
+    <!--Linking JavaScript file to HTML-->
+    <script src="../JS/MainJS.js"></script>
+    <!--Own Code End-->
+</body>
+</html>

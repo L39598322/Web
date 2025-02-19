@@ -1,0 +1,166 @@
+/*Own Code*/
+
+/*Hides overflow of text in a page*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/*Hiding the scrollbar*/
+::-webkit-scrollbar {
+    width: 0;
+}
+/*Background Colour*/
+body {
+    background: linear-gradient(to right, purple, blue)
+}
+/*Navigation bar positioning*/
+.topnav {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    background-image: linear-gradient(to right, purple, blue);
+    flex-wrap: wrap;   
+}
+/*Navbar Logo positioning*/
+.topnav .logo {
+    margin-right: 20px; 
+}
+/*Navbar logo sizing*/
+.topnav .logo img {
+    height: 110px; 
+}
+/*Navbar buttons positioning & properties*/
+.topnav a {
+    color: whitesmoke;
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    padding: 40px 40px;
+    border-spacing: 70px;
+    font-size: 19px;
+    box-sizing: border-box;
+    border: none; 
+    background: transparent;
+    transition: 0.3s ease, color 0.3s ease;
+}
+/*Navbar button hover properties*/
+.topnav a:hover {
+    color: aqua;
+    text-decoration: underline;
+    transition:0.3s ease, color 0.3s ease-in-out;
+}
+/*Navbar active button display properties to disguinish which is active*/
+.topnav a.active {
+    font-weight:bolder;
+}
+/*Navbar login button positioning*/
+.topnav .account {
+    position: relative;
+    margin-left: auto;
+}
+/*Search Bar*/
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+/*Border Container for each image title*/
+.text {
+    border: solid lightgrey 2px;
+}
+/*Phone Title text color*/
+.text a{
+    color: white;
+}
+/*Phone Title text color when hovering*/
+.text a:hover {
+    text-decoration: underline;
+    color: lightslategray;
+
+}
+/*Phone's Row 1 and Row 2*/ 
+/*Row 1, Image at max width, Border Properties and positioning*/
+.r1 img {
+    max-width: 100%;
+    border-top: solid 2px lightgrey;
+    border-left: solid 2px lightgrey;
+    border-right: solid 2px lightgrey;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+/*Row 2, Image at max width, Border Properties and positioning*/
+.r2 img {
+    max-width: 100%;
+    border-top: solid 2px lightgrey;
+    border-left: solid 2px lightgrey;
+    border-right: solid 2px lightgrey;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+/*Copyright for Client placed in the bottom-centre, in white text and medium font size  */
+.copyright {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+/*Smaller Screen Content*/
+@media screen and (max-width: 768px) {
+    /*Puts the navbar icon in the centre at the top of the navbar*/
+    .topnav .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    /*Changes the navbar into a column style and positions to the centre*/
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    /* Hides the navbar until the hamburger icon is clicked. Positions the buttons of the navbar in the centre  
+       whilst keeping original aspects of bigger screen navbar*/
+    .topnav a {
+        display: none;
+        padding: 15px;
+        font-size: 18px;
+        width: 100%; 
+        text-align: center; 
+        border-radius: 20px;   
+        margin-bottom: 5px;
+        background-image:linear-gradient(to right,blue, purple);
+    }
+
+    /* Display the buttons when the menu is active */
+    .topnav.active a {
+        display: block;
+    }
+
+    /* Show the hamburger icon on smaller screens & positions it in the bottom right */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 15px;
+    }
+    .r1 .col-sm-6 {
+        margin-top: -130px;
+    }
+    .r1 .col-sm-6, .r2 .col-sm-6 {
+        width: 50%; /* Makes each item take up 50% of the row width */
+        display: inline-block; /* Stack the items vertically */
+    }
+}
+
+/*Hides the hamburger icon that was on the smaller screen*/
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none; 
+    }
+
+}

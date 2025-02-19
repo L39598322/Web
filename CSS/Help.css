@@ -1,0 +1,153 @@
+/*Own Code*/
+
+/*Hides overflow of text in a page*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/*Hiding the scrollbar*/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+/*Navigation bar positioning*/
+.topnav {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    background-image: linear-gradient(to right, purple, blue);
+    flex-wrap: wrap;   
+}
+/*Navbar Logo positioning*/
+.topnav .logo {
+    margin-right: 20px; 
+}
+/*Navbar logo sizing*/
+.topnav .logo img {
+    height: 110px; 
+}
+/*Navbar buttons positioning & properties*/
+.topnav a {
+    color: whitesmoke;
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    padding: 40px 40px;
+    border-spacing: 70px;
+    font-size: 19px;
+    box-sizing: border-box;
+    border: none; 
+    background: transparent;
+    transition: 0.3s ease, color 0.3s ease;
+}
+/*Navbar button hover properties*/
+.topnav a:hover {
+    color: aqua;
+    text-decoration: underline;
+    transition:0.3s ease, color 0.3s ease-in-out;
+}
+/*Navbar active button display properties to disguinish which is active*/
+.topnav a.active {
+    font-weight:bolder;
+}
+/*Navbar login button positioning*/
+.topnav .account {
+    position: relative;
+    margin-left: auto;
+}
+/*Background to the search bar, Border positioning, properties and sizing*/
+.headingsearch {
+    border: solid 2px black;
+    padding: 40px;
+    background-image: url("../Images/HPageBack.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*"How can we help?" properties & positioning*/
+.headingsearch h1 {
+    color: white;
+    text-align: center;
+}
+/*Search Bar positioning & sizing*/
+.search-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*"Thank You" message properties (font, font-size) & positioning*/
+.message p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+/*"Signature" properties (font, font-size, font-weight) & positioning*/
+.message h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*Copyright for Client placed in the bottom-centre, in white text and medium font size  */
+.copyright {
+    padding-top: 130px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+/*Smaller Screen Content*/
+@media screen and (max-width: 768px) {
+    /*Puts the navbar icon in the centre at the top of the navbar*/
+    .topnav .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    /*Changes the navbar into a column style and positions to the centre*/
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    /* Hides the navbar until the hamburger icon is clicked. Positions the buttons of the navbar in the centre  
+       whilst keeping original aspects of bigger screen navbar*/
+    .topnav a {
+        display: none;
+        padding: 15px;
+        font-size: 18px;
+        width: 100%; 
+        text-align: center; 
+        border: solid 2px red;
+        border-radius: 20px;   
+        margin-bottom: 5px;
+        background-image:linear-gradient(to right,blue, purple);
+    }
+
+    /* Display the buttons when the menu is active */
+    .topnav.active a {
+        display: block;
+    }
+
+    /* Show the hamburger icon on smaller screens & positions it in the bottom right */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 15px;
+    }
+}
+
+/*Hides the hamburger icon that was on the smaller screen*/
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none; 
+    }
+}

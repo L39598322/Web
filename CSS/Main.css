@@ -1,0 +1,215 @@
+/*Own Code*/
+
+/*Hides overflow of text in a page*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/*Hiding the scrollbar*/
+::-webkit-scrollbar {
+    width: 0;
+}
+/*Background Colour*/
+body {
+    background: linear-gradient(to right, purple, blue)
+}
+/*Navigation bar positioning*/
+.topnav {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    background-image: linear-gradient(to right, purple, blue);    
+    flex-wrap: wrap;   
+    border-bottom: solid 1px black;
+}
+/*Navbar Logo positioning*/
+.topnav .logo {
+    margin-right: 20px; 
+}
+/*Navbar logo sizing*/
+.topnav .logo img {
+    height: 110px; 
+}
+/*Navbar buttons positioning & properties*/
+.topnav a {
+    color: whitesmoke;
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    padding: 40px 40px;
+    border-spacing: 70px;
+    font-size: 19px;
+    box-sizing: border-box;
+    border: none; 
+    background: transparent;
+    transition: 0.3s ease, color 0.3s ease;
+}
+/*Navbar button hover properties*/
+.topnav a:hover {
+    color: aqua;
+    text-decoration: underline;
+    transition:0.3s ease, color 0.3s ease-in-out;
+}
+/*Navbar active button display properties to disguinish which is active*/
+.topnav a.active {
+    font-weight:bolder;
+}
+/*Navbar login button positioning*/
+.topnav .account {
+    position: relative;
+    margin-left: auto;
+}
+/*Promotional Banners on Index Page*/
+/*Samsung S25 banner background*/
+.background {
+    background: linear-gradient(darkblue, black);
+    height: 401px;
+    border: 1px solid white;
+}
+/*S25 video*/
+.vid video {
+    width: 695px;
+    height: auto;
+    margin-left: 55px;
+
+}
+/*iPhone 16 banner Background*/
+.background2 {
+    background: black;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    height: 395px;
+}
+/*iPhone video*/
+.vid2 video {
+    width: 695px;
+    height: auto;
+    margin-left: 55px;
+
+}
+/*Text properties & positioning for Banners 1 & 3*/
+.text {
+    position: relative;
+    padding: 100px 0;
+    text-align: left;
+    color: white;
+}
+.text h3 {
+    font-size: 35px;
+}
+.text p {
+    font-size: 15px;
+}
+
+/*Honor Magic7 Pro banner background*/
+.background3 {
+    background: linear-gradient(black, darkblue);
+    border: 1px solid white;
+    height: 398px;
+}
+/*Honor Magic7 Pro vid positioning*/
+.vid3 video {
+    width: 695px;
+    height: auto;
+    margin-left: 55px;
+}
+
+/*Copyright for Client placed in the bottom-centre, in white text and medium font size  */
+.copyright {
+    color: white;
+    background: linear-gradient(to right, purple, blue);
+    text-align: center;
+    font-size: 16px;
+}
+
+/*Smaller Screen Content*/
+@media screen and (max-width: 768px) {
+    /*Puts the navbar icon in the centre at the top of the navbar*/
+    .topnav .logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    /*Changes the navbar into a column style and positions to the centre*/
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    /* Hides the navbar until the hamburger icon is clicked. Positions the buttons of the navbar in the centre  
+       whilst keeping original aspects of bigger screen navbar*/
+    .topnav a {
+        display: none;
+        padding: 15px;
+        font-size: 18px;
+        width: 100%; 
+        text-align: center; 
+        border-radius: 20px;   
+        margin-bottom: 5px;
+        background-image:linear-gradient(to right,blue, purple);
+    }
+
+    /* Display the buttons when the menu is active */
+    .topnav.active a {
+        display: block;
+    }
+
+    /* Show the hamburger icon on smaller screens & positions it in the bottom right */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 15px;
+    }
+    /*Positioning of Banner images, stacked in column and aligned to the center*/
+    .row {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    /*1st Banner Positioning and Properties*/
+    .vid video{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px; 
+        height: auto;
+    }
+    /*2nd Banner Positioning and Properties*/
+    .vid2 video{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px; 
+        height: auto;
+    }
+    /*3rd Banner Positioning and Properties*/
+    .vid3 video{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px; 
+        height: auto;
+    }
+    /*Aligns the class "text" to the center of the smaller screen*/
+    .text {
+        text-align: center;
+    }
+
+
+    /* Ensure background stretches across small screens */
+    .background, .background2, .background3 {
+        height: auto; 
+    }
+}
+
+/*Hides the hamburger icon that was on the smaller screen*/
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none; 
+    }
+    
+}

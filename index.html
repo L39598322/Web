@@ -1,0 +1,71 @@
+<!--Own Code-->
+<!DOCTYPE html>
+<!--Defining language of page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Title of Page-->
+    <title>Log-in</title>
+    <!--Linking CSS Stylesheet to HTML-->
+    <link rel="stylesheet" href="CSS/Login.css">
+    <!--Linking Bootstrap framework to HTML for old functions-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Adds a more responsive design for smaller screens-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--Own Code End-->
+<!--Bootstrap - Grid System, https://getbootstrap.com/docs/4.0/layout/grid/ & Own Code 
+    (Creation of the Form and it's properties)-->
+<body>
+    <!--Background Class-->
+    <div class="background">
+        <!--Main container which holds the two columns-->
+        <div class="container main">
+            <!--Row container-->
+            <div class="row">
+                <!--Bootstrap element. Splits the container in half representing two columns. 
+                    This is the left column for Logo and Welcome text-->
+                <div class="col-md-6 left">
+                    <!--Logo linked to homepage aka.. Guest Login-->
+                    <a href="Pages/Home.html"><img src="Images/NavLogo.png" alt="Navlogo"></a>
+                    <!--Text Class with welcome message-->
+                    <div class="text">
+                        <p>Welcome to TNKs Super Smartphones</p>
+                    </div>
+                </div>
+                <!--Bootstrap element. Splits the container in half representing two columns. 
+                    This is the right column for the login form-->
+                <div class="col-md-6 right">
+                    <!--input-box Class containing the form-->
+                    <div class="input-box">
+                        <!--Header for the Form-->
+                        <header>Log-In</header>
+                        <!--After completing login, the submission will take you to the completion page-->
+                        <form action ="Pages/Login-complete.html">
+                            <!--Email input-field-->
+                            <div class="input-field">
+                                <input type="email" class="input" id="email" required>
+                                <label for="email">Email</label> 
+                            </div> 
+                            <!--Password input-field-->
+                            <div class="input-field">
+                                <input type="password" class="input" id="pass" required>
+                                <label for="pass">Password</label>
+                            </div> 
+                            <!--Submit button which completes the form and links to completion page-->
+                            <div class="input-field">
+                                <input type="submit" class="submit" value="Log-In">
+                            </div> 
+                        </form> 
+                    </div>
+                    <!--Signup Class which links to the signup page if they don't have an account-->
+                    <div class="signup">
+                        <span>Don't have an Account? <a href="Pages/Signup.html">Sign Up Here</a></span>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap - Grid System & Own Code End-->
+</body>
+</html>

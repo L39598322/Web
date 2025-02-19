@@ -1,0 +1,229 @@
+/*Own Code*/
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+/* Applying Custom Font */
+* {
+    font-family:'Poppins', sans-serif;
+}
+/*Background Assets */
+.background {
+    background:url(../Images/download.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 20px 0 20px;
+}
+/* Display Settings */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Central Border-box properties */
+.row {
+    width: 900px;
+    height: 550px;
+    border: solid 1px aliceblue;
+    border-radius: 10px;
+    background: linear-gradient(to right, blue, purple, blueviolet);
+    animation: bordermove 4s infinite;
+}
+/* Breathing box-shadow */
+@keyframes bordermove {
+    40% {box-shadow: 0px 10px 20px 30px blueviolet;}
+}
+/* Image inside the box on the left properties*/
+.left {
+    background-image: url("../Images/Loginsideimage.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+/*TNK Logo properties and positioning*/
+img{
+    width: 100px;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+}
+/*Welcome Text positioning*/
+.text {
+    position: absolute;
+    top: 96%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+/*Welcome Text properties*/
+.text p {
+    color: whitesmoke;
+    font-size: 20px;
+}
+/*Functions on right side properties*/
+.right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+/*Input Box Positioning and Sizing*/
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+} 
+/*Header (Login / Sign-Up) properties*/
+.input-box header {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+/*Input field positioning + properties*/
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: whitesmoke;
+    padding: 0 10px 0 10px;
+}
+/*Input class spacing + properties*/
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-bottom: 20px;
+}
+/*Input field titles positioning + transition*/
+.input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+/*Input field (Title moves up when focused on)*/
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 10px;
+}
+/*Input field (if text is present in input field, title will stay moved up)*/
+.input-field .input:valid ~ label {
+    top: -10px;
+    font-size: 10px;
+    color: wheat;
+}
+/*Login / Signup button properties and positioning*/
+.submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: linear-gradient(to left, purple, blueviolet);
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+/*Hover properties for Login / Signup button*/
+.submit:hover {
+    color: black;
+}
+/*Text + Hyperlink to Signup/Login properties and positioning*/
+.signup {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.login {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/*Text colour properties*/
+span {
+    color: white;
+}
+/*Hyperlink properties*/
+span a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    transition: 0.2s;
+}
+/*Hyperlink hover properties*/
+span a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*Heading 3 Positioning and properties*/
+h3 {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+/*Heading 5 Positioning and properties*/
+h5 {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+/*Loading gif positioning on Sign-up / Log-in completed webpage*/
+.loading img {
+    position: relative;
+    width: 50%;
+    margin-left: 100px;
+}
+/*Smaller Screen Content*/
+@media only screen and (max-width: 768px){
+    /*Positioning the TNK background inside the border to fit smaller screens*/
+    .left {
+        height: 130px;
+        border-radius: 11px 10px 0 0;
+    }
+    .right {
+        height: 0px;
+    }
+    /*Positioning the TNK logo inside the border to fit smaller screens*/
+    img {
+        width: 80px;
+        position: absolute;
+        left: 41.4%;
+    }
+    /*Positioning the "Welcome to TNKs Super Smartphones" message below the TNK logo*/
+    .text {
+        position: absolute;
+        top: 80%;
+        left: 50%
+    }
+    /*Making the text smaller to fit the smaller screen */
+    .text p{
+        font-size: 17px;
+    }
+    /*Limiting how big the border can be*/
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+    /*Loading gif positioning on Sign-up / Log-in completed webpage on smaller displays*/
+    .loading img {
+        position: relative;
+        width: 50%;
+        margin-left: -70px;
+    }
+}

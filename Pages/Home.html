@@ -1,0 +1,151 @@
+<!--Own Code-->
+<!DOCTYPE html>
+<!--Defining language of page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Title of Page-->
+    <title>Home Page</title>
+    <!--Linking CSS Stylesheet to HTML-->
+    <link rel="stylesheet" type="text/css" href="../CSS/Main.css">
+    <!--Linking Bootstrap framework to HTML-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Adds a more responsive design for smaller screens-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--Own Code End-->
+<!--W3Schools - How to create a top navigation bar with CSS, https://www.w3schools.com/howto/howto_js_topnav.asp & 
+    Own Code (Hamburger Menu for smaller screens, Logo in navbar)-->
+<body>
+    <!--Top Navigation bar placed in header-->
+    <header>
+        <div class="topnav">
+            <!--Logo class with the logo image placed inside, displayed in Navbar-->
+            <div class="logo">
+                <img src="../Images/NavLogo.png" alt="Logo">
+            </div>
+            <!--Navigation bar buttons which link to different pages. Index is the page displayed therefore has a class called active-->
+            <a class="active" href="Home.html">Home</a>
+            <a href="Phones.html">Phones</a>
+            <a href="Help.html">Help</a>
+            <!--Account class with a linked button which allows the user to log out-->
+            <div class="account">
+                <a href="../index.html">Log Out</a>
+            </div>
+            <!--Hamburger menu allowing for compatability with smaller screens-->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
+    </header>
+<!--W3Schools - How to create a top navigation bar with CSS & Own Code; End-->
+
+<!--Bootstrap - Grid System, https://getbootstrap.com/docs/4.0/layout/grid/ & Own Code (Videos for Phone Banners, Hyperlinks to websites)-->
+    <!--Hyperlink to Samsung S25 on the official Samsung Website-->
+    <a href="https://www.samsung.com/uk/business/smartphones/galaxy-s/galaxy-s25-navy-256gb-sm-s931bdbgeub/buy/?cid=UK_PPC_4586843643_ID~GLB0006AEL_CN~Paradigm-Series-PLA_BS~mx_PR~f1h25_SB~smart_PH~on_MK~gb_OB~conv_FS~hobl_FF~-&ad=730129434225&gad_source=1&gclid=EAIaIQobChMIo5b27uCqiwMVJ5dQBh3NvwQ8EAQYAiABEgIeJvD_BwE&gclsrc=aw.ds">
+        <!--Background Class-->
+        <div class="background">
+            <!--Container Class-->
+            <div class="container">
+                <!--Row Class-->
+                <div class="row">
+                    <!--Bootstrap element. Splits the container in half representing two columns. This is the Text on the left side-->
+                    <div class="col-sm-6 side-content">
+                        <!--Text class, contains all the text for the phones promotion-->
+                        <div class="text">
+                            <!--Heading used as the phone's title-->
+                            <h3>Samsung S25 Series</h3>
+                            <br>
+                            <p>Discover Galaxy AI with the new Samsung Galaxy S25 series.</p>
+                            <br>
+                            <p>Click anywhere in this section to view.</p>
+                        </div>
+                    </div>
+                    <!--Bootstrap element. Splits the container in half representing two columns. This is the Video on the right side-->
+                    <div class="col-sm-6 vid">
+                        <!--Ensures that the video has no sound, plays automatically and loops endlessly-->
+                        <video autoplay muted loop>
+                            <source src="../Images/S25mp4.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <!--Hyperlink to Apple iPhone 16 on the official Apple Website-->
+    <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-16/6.1-inch-display-128gb-ultramarine?afid=p238%7CsWBGjaMHP-dc_mtid_187079nc38483_pcrid_714542375950_pgrid_170878479547_pntwk_g_pchan_local_pexid__ptid_pla-2361610257290_&cid=aos-uk-kwgo-pla-iphone--slid---product-MYEC3QN/A-UK">
+        <!--Second Background Class-->
+        <div class="background2">
+            <!--Container Class-->
+            <div class="container">
+                <!--Row Class-->
+                <div class="row">
+                    <!--Bootstrap element. Splits the container in half representing two columns. This is the Text on the left side-->
+                    <div class="col-sm-6 side-content">
+                        <!--Text class, contains all the text for the phones promotion-->
+                        <div class="text">
+                            <!--Heading used as the phone's title-->
+                            <h3>iPhone 16</h3>
+                            <br>
+                            <p>Apple Intelligence Available now.</p>
+                            <br>
+                            <p>Click anywhere in this section to view.</p>
+                        </div>
+                    </div>
+                    <!--Bootstrap element. Splits the container in half representing two columns. This is the Video on the right side-->
+                    <div class="col-sm-6 vid2">
+                        <!--Ensures that the video has no sound, plays automatically and loops endlessly-->
+                        <video autoplay muted loop>
+                            <source src="../Images/I16vid.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <!--Hyperlink to HONOR Magic7 Pro on the official HONOR Website-->
+    <a href="https://www.honor.com/uk/phones/honor-magic7-pro/buy/?utm_source=google&utm_medium=cpc&utm_campaign=m7p_lau_uk_ec_conv_pur_int_search_p_ms&gad_source=1&gclid=EAIaIQobChMIkoqExOGqiwMVjZRQBh3VMglEEAAYASAAEgI92vD_BwE">
+        <!--Third Background Class-->
+        <div class="background3">
+            <!--Container Class-->
+            <div class="container">
+                <!--Row Class-->
+                <div class="row">
+                    <!--Bootstrap element. Splits the container in half representing two columns. This is the Text on the left side-->
+                    <div class="col-sm-6 side-content">
+                        <!--Text class, contains all the text for the phones promotion-->
+                        <div class="text">
+                            <!--Heading used as the phone's title-->
+                            <h3>HONOR Magic7 Pro</h3>
+                            <br>
+                            <p>HONOR Magic7 Pro 12GB+512GB Lunar Shadow Grey</p>
+                            <br>
+                            <p>Featuring a promotional free gift: HONOR MagicPad2</p>
+                            <br>
+                            <p>Click anywhere in this section to view.</p>
+                        </div>
+                    </div>
+                    <!--Bootstrap element. Splits the container in half representing two columns. This is the Video on the right side-->
+                    <div class="col-sm-6 vid3">
+                        <!--Ensures that the video has no sound, plays automatically and loops endlessly-->
+                        <video autoplay muted loop>
+                            <source src="../Images/H7Pvid.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <!--Bootstrap - Grid System & Own Code; End-->
+
+    <!--Own Code-->
+    <!--Copyright Class-->
+    <div class="copyright">
+        <br><br>
+        <p>© TNKs Super Smartphones 2024-2025 </p>
+    </div>    
+    <!--Linking JavaScript file to HTML-->
+    <script src="../JS/MainJS.js"></script>
+    <!--Own Code End-->
+</body>
+</html>

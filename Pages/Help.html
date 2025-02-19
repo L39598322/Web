@@ -1,0 +1,71 @@
+<!--Own Code-->
+<!DOCTYPE html>
+<!--Defining language of page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Title of Page-->
+    <title>Contact & Help</title>
+    <!--Linking CSS Stylesheet to HTML-->
+    <link rel="stylesheet" type="text/css" href="../CSS/Help.css">
+    <!--Linking Bootstrap framework to HTML for old functions-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Adds a more responsive design for smaller screens-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--Own Code End-->
+<!--W3Schools - How to create a top navigation bar with CSS, https://www.w3schools.com/howto/howto_js_topnav.asp & 
+Own Code (Hamburger Menu for smaller screens, Logo in navbar)-->
+<body>
+    <!--Top Navigation bar placed in header-->
+    <header>
+        <div class="topnav">
+            <!--Logo class with the logo image placed inside, displayed in Navbar-->
+            <div class="logo">
+                <img src="../Images/NavLogo.png" alt="Logo">
+            </div>
+            <!--Navigation bar buttons which link to different pages. Index is the page displayed therefore has a class called active-->
+            <a href="Home.html">Home</a>
+            <a href="Phones.html">Phones</a>
+            <a class="active" href="Help.html">Help</a>
+            <!--Account class with a linked button which allows the user to log out-->
+            <div class="account">
+                <a href="../index.html">Log Out</a>
+            </div>
+            <!--Hamburger menu allowing for compatability with smaller screens-->
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
+    </header>
+<!--W3Schools - How to create a top navigation bar with CSS & Own Code; End-->
+
+<!--Own Code-->
+    <!--Heading for above search-bar Class-->
+    <div class="headingsearch">
+        <h1>How can we help?</h1>
+        <!--Bootstrap search-bar function, creates a search bar by using the class to style it visually as a search bar, 
+            additionally placeholder has been used to show it's a search bar to a customer-->
+        <div class="search-container">
+            <input type="search" class="form-control rounded" placeholder="Search...">
+        </div>
+    </div>
+    <br>
+    <!--Message Class for Help page-->
+    <div class="message">
+        <p>Thank you for visiting our Help Centre! We're committed to providing you with all the support you need for a smooth and easy shopping experience. From troubleshooting technical issues to helping you navigate our website; our team is here to assist you every step of the way. If you’re experiencing any difficulties with placing an order, payment methods, delivery, or simply struggling to find the phone you want; we’ve got you covered with detailed guides and FAQs. If that doesn't settle your issues / queries, don’t hesitate to contact our customer service team. We’re always happy to help! </p>
+        <br>
+        <h5>Regards,</h5>
+        <h5>TNKs Customer Service Management Team.</h5>
+    </div>
+
+    <!--Copyright Class-->
+    <div class="copyright">
+        <br><br>
+        <p>© TNKs Super Smartphones 2024-2025 </p>
+    </div>    
+    <!--Linking JavaScript file to HTML-->
+    <script src="../JS/MainJS.js"></script>
+    <!--Own Code End-->
+</body>
+</html>
